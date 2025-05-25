@@ -45,36 +45,6 @@ Asegúrate de tener instalado:
 * Python 3.x
 * Pip (el gestor de paquetes de Python)
 
-### Instalación
-
-1.  **Clona el repositorio (o descarga los archivos):**
-    ```bash
-    git clone [https://github.com/tu-usuario/nombre-de-tu-repositorio.git](https://github.com/tu-usuario/nombre-de-tu-repositorio.git)
-    cd nombre-de-tu-repositorio
-    ```
-    *(Reemplaza la URL si ya lo tienes en GitHub)*
-
-2.  **Crea un entorno virtual (recomendado):**
-    ```bash
-    python -m venv venv
-    # En Windows
-    venv\Scripts\activate
-    # En macOS/Linux
-    source venv/bin/activate
-    ```
-
-3.  **Instala las dependencias:**
-    Crea un archivo `requirements.txt` con el siguiente contenido:
-    ```txt
-    matplotlib
-    pykml
-    ```
-    Luego ejecuta:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Tkinter usualmente viene incluido con las instalaciones estándar de Python, pero si no, podría necesitar una instalación separada dependiendo de tu sistema operativo, ej: `sudo apt-get install python3-tk` en Debian/Ubuntu).*
-
 ## 📋 Uso
 
 1.  **Ejecuta la aplicación:**
