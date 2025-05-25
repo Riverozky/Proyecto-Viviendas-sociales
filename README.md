@@ -33,3 +33,67 @@ Herramienta de escritorio para cargar polígonos de terreno desde archivos KML, 
 * **Matplotlib**: Para la generación de gráficos 2D y su integración en Tkinter.
 * **pykml**: Para el parseo (lectura y análisis) de archivos KML.
 * **math**: Para cálculos matemáticos diversos en la lógica de distribución.
+
+## 🚀 Empezando
+
+Sigue estas instrucciones para poner en funcionamiento el programa en tu máquina local.
+
+### Prerrequisitos
+
+Asegúrate de tener instalado:
+
+* Python 3.x
+* Pip (el gestor de paquetes de Python)
+
+### Instalación
+
+1.  **Clona el repositorio (o descarga los archivos):**
+    ```bash
+    git clone [https://github.com/tu-usuario/nombre-de-tu-repositorio.git](https://github.com/tu-usuario/nombre-de-tu-repositorio.git)
+    cd nombre-de-tu-repositorio
+    ```
+    *(Reemplaza la URL si ya lo tienes en GitHub)*
+
+2.  **Crea un entorno virtual (recomendado):**
+    ```bash
+    python -m venv venv
+    # En Windows
+    venv\Scripts\activate
+    # En macOS/Linux
+    source venv/bin/activate
+    ```
+
+3.  **Instala las dependencias:**
+    Crea un archivo `requirements.txt` con el siguiente contenido:
+    ```txt
+    matplotlib
+    pykml
+    ```
+    Luego ejecuta:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(Tkinter usualmente viene incluido con las instalaciones estándar de Python, pero si no, podría necesitar una instalación separada dependiendo de tu sistema operativo, ej: `sudo apt-get install python3-tk` en Debian/Ubuntu).*
+
+## 📋 Uso
+
+1.  **Ejecuta la aplicación:**
+    Navega a la carpeta donde se encuentra el script principal (ej: `nombre_del_script.py`) y ejecútalo:
+    ```bash
+    python nombre_del_script.py
+    ```
+2.  **Cargar KML**:
+    * Haz clic en el botón **"Cargar KML"**.
+    * Selecciona el archivo `.kml` que define el polígono del terreno.
+    * La barra de estado mostrará información del KML cargado.
+3.  **Ingresar Parámetros**:
+    * **D.Corona**: Define el offset desde el borde del terreno para el área interna.
+    * **An.Base**: Ancho de las unidades base.
+    * **La.Base**: Largo de las unidades base.
+    * **An.Pasillo**: Ancho de los pasillos.
+4.  **Calcular y Visualizar**:
+    * Haz clic en el botón **"Calcular y Visualizar"**.
+    * La aplicación procesará los datos y mostrará la distribución en el área de gráfico.
+    * La barra de estado indicará el resultado del cálculo (cantidad de unidades).
+5.  **Interactuar con el Gráfico**:
+    * Usa la barra de herramientas de Matplotlib debajo del gráfico para hacer zoom, mover la vista, o guardar la imagen.
