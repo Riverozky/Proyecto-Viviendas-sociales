@@ -2,6 +2,9 @@
 
 Herramienta de escritorio para cargar polígonos de terreno desde archivos KML, calcular una distribución optimizada de diferentes tipos de unidades (base, pasillos, escaleras, área central) según parámetros definidos por el usuario, y visualizar el resultado gráficamente.
 
+## ⚠️ **Descargo de Responsabilidad Importante:**
+* Esta aplicación se encuentra en desarrollo activo. Actualmente, **no es operativa con todo tipo de archivos KML.** Por el momento, se ha probado y funciona de manera más predecible con archivos KML específicos denominados `terreno.kml` y `terreno.copy.kml` que siguen una estructura particular de polígono. Se recomienda precaución al usar otros archivos KML, ya que podrían no ser procesados correctamente.
+
 ## 🌟 Funcionalidades Principales
 
 * **Carga de Geometría KML**: Importa el contorno de un terreno a partir de un archivo `.kml`.
